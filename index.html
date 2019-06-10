@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div>
-    <h1>One</h1>
-  </div>
-  <div>
-    <p>I'm hosted with GitHub Pages.</p>
-  </div>
+<!-- Load React & ReactDOM scripts -->
+<!-- Don't worry about how we're doing this yet! -->
+<script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+
+<!-- Root element -->
+<div id="root"></div>
+
+<script type="text/javascript">
+  const element = React.createElement('div', {
+    children: 'Hello World'
+  });
+
+  const rootElement = document.querySelector('#root');
+  ReactDOM.render(element, rootElement);
+</script>
 </body>
 </html>
